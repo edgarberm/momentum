@@ -8,6 +8,6 @@ Simulates the native Mac OS scrolling effect, but you can customize some options
 See in action [here](http://builtbyedgar.com/lab/momentum/)
 
 
-## NOTICE 🚨
+### NOTICE 🚨
 
 This is an experimental plugin and is not ready for production. 
