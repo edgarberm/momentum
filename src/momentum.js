@@ -16,9 +16,10 @@ class Momentum {
    * @param {[Object]}      options - Configuration options
    */
   constructor (element = null, options) {
+    if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) return
     if (typeof element !== 'string') throw Error('Momentum Error: The provided selector for the scroll wrapper is not valid.')
 
-    this.body = document.getElementsByTagName('body')[0]
+    this.body = document.body || document.documentElement
     this.scroller = document.querySelector(element)
     this.easing = options.easing || 'cubic-bezier(0.19, 1, 0.22, 1)'  // ease out expo
     this.life = `${ options.life }s` || '0.8s'
@@ -70,6 +71,7 @@ class Momentum {
    * Handles the scroll event
    */
   onScroll (event) {
+    event.preventDefault()
     this.top = -(window.pageYOffset || document.documentElement.scrollTop)
     // NOTE: translate3d forcing hardware acceleration and is faster than translate and translateY
     this.scroller.style.transform = 'translate3d(0, ' + this.top + 'px, 0)'
