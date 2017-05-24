@@ -6,3 +6,8 @@ Momentum adds 'momentum' or inertia to your webpage scroll in only 3k (uncompres
 Simulates the native Mac OS scrolling effect, but you can customize some options.
 
 See in action [here](http://builtbyedgar.com/lab/momentum/)
+
+
+## NOTICE 🚨
+
+This is an experimental plugin and is not ready for production. 
