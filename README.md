@@ -1,6 +1,6 @@
 # Momentum
 
-Smooth scrolling for all platforms 😎🤘
+Smooth scrolling for all (desktop for the moment) platforms 😎🤘
 
 Momentum adds 'momentum' or inertia to your webpage scroll in only 3k (uncompressed).
 Simulates the native Mac OS scrolling effect with some customizable options.
